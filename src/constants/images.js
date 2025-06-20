@@ -34,7 +34,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-import anukool from '../assets/anukool.png';
+import anukool from '../assets/anukool.png';/////////////////
 import js from '../assets/js.png';
 import avlogo from '../assets/avlogo.png';
 
