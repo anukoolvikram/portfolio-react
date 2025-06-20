@@ -17,7 +17,6 @@ import music from '../assets/music.jpg'
 
 import logocpp from '../assets/stack/c++.png'
 import logojs from '../assets/stack/js.png'
-import logopython from '../assets/stack/python.png'
 import logopgsql from '../assets/stack/pgsql.png'
 import logomongo from '../assets/stack/mongo.png'
 import logodjango from '../assets/stack/django.png'
@@ -35,7 +34,6 @@ export default {
   logocpp,
   logojs,
   logonode,
-  logopython,
   logoreact,
   logodjango,
   logomongo,

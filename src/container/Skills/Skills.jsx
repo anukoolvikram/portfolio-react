@@ -13,7 +13,7 @@ import { images } from '../../constants';
 {
   name: 'Python',
   bgColor: '#306998', // Official Python blue
-  icon: images.logopython
+  icon: images.python
 },
 
   {

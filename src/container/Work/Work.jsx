@@ -43,14 +43,16 @@ const Work = () => {
     <>
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="app__work-portfolio"
-      >
+      <div className="app__work-portfolio">
         {filterWork.map((work, index) => (
-          <div className="app__work-item app__flex" key={index}>
+          <motion.div
+            className="app__work-item app__flex"
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+          >
             <div className="app__work-img app__flex">
               <img src={work.imgUrl} alt={work.title} loading="lazy" />
               <motion.div
@@ -70,13 +72,13 @@ const Work = () => {
               </motion.div>
             </div>
 
-            <div className="app__work-content">
+            <div className="app__work-content" style={{marginTop: 15}}>
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
+              <p className="p-text">{work.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </motion.div>
+      </div>
     </>
   );
 };
